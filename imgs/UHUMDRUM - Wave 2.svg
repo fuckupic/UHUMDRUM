@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2877.14 476.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1438.57" x2="1438.57" y2="476.96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#129081"/>
+      <stop offset="1" stop-color="#2c3b38"/>
+    </linearGradient>
+  </defs>
+  <title>UHUMDRUM - Wave 2</title>
+  <path class="cls-1" d="M0,307.55C132.92,307.55,351.6,0,472.8,0s97.73,160.29,289.3,160.29S984.94,0,1094.41,0s132.92,160.29,304.94,160.29S1669.1,0,1829.39,0s86,160.29,308.85,160.29,320.59-130.67,434-129C2779,34.3,2877.14,371,2877.14,371V477H0Z"/>
+</svg>

@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+}
+@font-face {
+  font-family: Uhumdrum;
+  src: url('stuff/font/Uhumdrum-Regular.ttf') format('ttf');
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: rgb(44, 59, 56);
+}
+body,
+html,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+button,
+span {
+  font-family: Uhumdrum, Montserrat;
+}
+#hero {
+  width: 100vw;
+  max-width: 100vw;
+  height: 120vh;
+  background: linear-gradient(
+    rgb(44, 59, 56),
+    20%,
+    rgb(18, 144, 129),
+    66%,
+    rgb(18, 144, 129)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0px;
+  margin: 0px;
+  overflow: hidden;
+  z-index: 0;
+}
+.heroTitle {
+  z-index: 1;
+  color: rgb(233, 236, 239);
+  font-size: 6vw;
+  word-spacing: -0.09em;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-weight: 100;
+  bottom: 27.5vw;
+  margin: 0px auto;
+}
+.tentacle {
+  position: absolute;
+  max-width: 33vw;
+  width: 33vw;
+  transition: transform 5s ease 0s;
+}
+#tentacle1 {
+  left: 17.5%;
+  bottom: 10%;
+  z-index: 8;
+}
+#tentacle2 {
+  left: 15%;
+  bottom: 5%;
+  z-index: 3;
+}
+#tentacle3 {
+  left: 18.5%;
+  bottom: 0%;
+  z-index: 7;
+}
+#tentacle4 {
+  left: 24%;
+  bottom: 0%;
+  z-index: 8;
+}
+#tentacle5 {
+  left: 20%;
+  bottom: 0%;
+  z-index: 7;
+}
+.wave {
+  max-width: 1000vw;
+  width: 110vw;
+  margin: 0px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) 10px 2.5px 10px);
+}
+.waves {
+  display: flex;
+  flex-direction: column;
+  transition: all 3s ease 0s;
+}
+.waveWrapper1 {
+  z-index: 10;
+  transform: translateY(1em);
+}
+.waveWrapper2 {
+  z-index: 9;
+  transform: translate(5em, 90%);
+}
+.waveWrapper3 {
+  z-index: 8;
+  transform: translateY(170%);
+}
+.waveWrapper4 {
+  z-index: 7;
+  transform: translate(5em, 260%);
+}
+.waveWrapper5 {
+  z-index: 6;
+  transform: translateY(340%);
+}
+.waveWrapper6 {
+  z-index: 5;
+  transform: translate(5em, 440%);
+}
+#wave_1 {
+  animation-delay: 1s;
+}
+#wave_2 {
+  animation-delay: 0.5s;
+}
+#wave_3 {
+  animation-delay: 1.5s;
+}
+#wave_4 {
+  animation-delay: 0.75s;
+}
+#wave_5 {
+  animation-delay: 0.5s;
+}
+#wave_6 {
+  animation-delay: 1s;
+}
+header {
+  max-height: 10vh;
+  height: 4vh;
+  max-width: 100vw;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  margin: 3em 15vw;
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center;
+  place-items: center;
+  gap: 0vw; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(44, 59, 56, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(44, 59, 56, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(44, 59, 56, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(44, 59, 56, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.menuText {
+  flex: 1 1 0%;
+  place-self: center;
+  text-align: center;
+}
+header h2 {
+  flex: 1 1 0%;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 14px;
+  color: white;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+header h2::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 7.5px;
+  background-color: rgb(233, 236, 239);
+  margin-right: 5px;
+}
+header h2:hover {
+  letter-spacing: 0.4em;
+  font-size: 13px;
+}
+.logo {
+  margin: 0.5em;
+  height: 6em;
+}
+.menuBtn {
+  justify-self: flex-end;
+}
+@keyframes waving {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(0px, 2.5px) rotate(0.5deg);
+  }
+  25% {
+    transform: translate(2.5px, 5px) rotate(1deg);
+  }
+  37.5% {
+    transform: translate(0px, 2.5px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  62.5% {
+    transform: translate(0px, -2.5px) rotate(-0.5deg);
+  }
+  75% {
+    transform: translate(-2.5px, -5px) rotate(-1deg);
+  }
+  87.5% {
+    transform: translate(0px, -2.5px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+#what {
+  margin: 5em 15%;
+  height: 50vh;
+  text-align: center;
+  color: rgb(233, 236, 239);
+  z-index: 10;
+}
+.product {
+  height: 100vh;
+}
